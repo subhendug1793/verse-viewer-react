@@ -8,7 +8,7 @@ import VerseTable from './components/VerseTable';
 
 function App() {
   const [visitorCount, setVisitorCount] = useState('Loading...');
-  const lastUpdated = 'June 2025'; // Update as needed
+  const lastUpdated = 'June 2025';
 
   useEffect(() => {
     updateVisitorCount().then(count => setVisitorCount(count));
