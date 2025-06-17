@@ -10,8 +10,7 @@ function App() {
   const lastUpdated = 'June 2025'; // Update as needed
 
   useEffect(() => {
-    // Placeholder for Firebase visitor count (added in Step 5)
-    setVisitorCount('N/A'); // Temporary
+    setVisitorCount('N/A'); // Temporary placeholder
   }, []);
 
   return (
