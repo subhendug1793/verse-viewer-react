@@ -2,6 +2,7 @@
 import './assets/style.css';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { updateVisitorCount } from './utils/firebase';
 import Header from './components/Header';
 import VerseTable from './components/VerseTable';
 
@@ -10,7 +11,7 @@ function App() {
   const lastUpdated = 'June 2025'; // Update as needed
 
   useEffect(() => {
-    setVisitorCount('N/A'); // Temporary placeholder
+    updateVisitorCount().then(count => setVisitorCount(count));
   }, []);
 
   return (
